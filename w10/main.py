@@ -1,6 +1,6 @@
 # # Week 10 Learn Together
 
-# Funky Dice Pogram
+# Funky Dice Program
 
 # Imports
 import random
