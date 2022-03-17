@@ -1,4 +1,5 @@
 # Week 10 Learn Together
+# Miguel Ontiveros Diaz's Python File
 
 import random  # added missing import random # 1
 
