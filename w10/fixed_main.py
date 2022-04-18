@@ -1,7 +1,7 @@
 # Week 10 Learn Together
 # Miguel Ontiveros Diaz's Python File
 
-import random  # added missing import random # 1
+import random  # added missing import random # 1 syntax
 
 
 def work_today():
@@ -16,7 +16,7 @@ def work_today():
 
 def total_time():
     # Goes through the dictionary to add the number of hours
-    sum_time = 0  # assigned sum_time to 0 so function would work # 2
+    sum_time = 0  # assigned sum_time to 0 so function would work # 2 logic
     for day in work_out_sched:
         sum_time += work_out_sched[day]["time"]
     return sum_time
@@ -69,7 +69,8 @@ motivating_word = ["great", "wonderfull", "stupendous", "fantastic",
 user_name = input("What is your name?: ")
 
 # PROMPT THE USER
-print(f"{user_name}'s Weekly Gym Planner")  # changed string to f"string" # 3
+# changed string to f"string" # 3 logic
+print(f"{user_name}'s Weekly Gym Planner")
 
 for day in work_out_sched:
     # Randomly chooses a motivating word and output
@@ -81,7 +82,7 @@ for day in work_out_sched:
     # BASED ON THE INPUT, OUTPUT THE DAY'S SCHEDULE
     if(day == "Sunday" or day == "Saturday"):
         print("Did you miss a day of work out?")
-        # added '()' after .lower # 4
+        # added '()' after .lower # 4 syntax
         missed_day = str(input("Enter 'y' for yes: ")).lower()
         if missed_day == "y":
             work_out1 = work_out_sched[day]["work out"][0]
@@ -92,7 +93,7 @@ for day in work_out_sched:
     else:
         work_out1 = work_out_sched[day]["work out"][0]
         work_out2 = work_out_sched[day]["work out"][1]
-        # Changed work_out1 at end of print statement to work_out2 # 5
+        # Changed work_out1 at end of print statement to work_out2 # 5 logic
         print("Today we will work out our " + work_out1 + " and " + work_out2)
 
     # Decided if we need to run today
@@ -103,13 +104,15 @@ for day in work_out_sched:
 
     # stores the value for the num of hours in that day
     daily_time = int(input("How many hours did you work out today?: "))
-    work_out_sched[day]["time"] = daily_time  # removed extra = # 6
+    work_out_sched[day]["time"] = daily_time  # removed extra = # 6 logic
 
     # prompts the user if they want to continue
     print("Will you continue working out for the week?")
-    choice = input("Enter 'y' for yes: ").lower()  # add . between lower() # 7
-    if not choice == 'y' or day == "Sunday":  # added : to end of line # 8
-        # added '()' after total_time # 9
+    # add . between lower() # 7 syntax
+    choice = input("Enter 'y' for yes: ").lower()
+    # added : to end of line # 8 syntax
+    if not choice == 'y' or day == "Sunday":
+        # added '()' after total_time # 9 syntax
         print(f"\nYou worked out a total of {total_time()} hours")
         print("Hope you had a great work out!")
         print("Till next week!")

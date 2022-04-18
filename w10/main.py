@@ -7,7 +7,7 @@ import random
 from os import system
 
 # Variables
-result == ""
+result = ""  # logic 1
 funky_dice = {}
 end_program = False
 
@@ -36,10 +36,11 @@ def get_result():
 
 print("\nWelcome to Funky Dice!")
 print("We give you a blank dice and you decide what the sides will be.")
-print(The sides can be anything from numbers, names, or even nothing.)
+print("The sides can be anything from numbers, names, or even nothing.")
+# name 2
 print("It's entirely up to you.\n")
 
-while not end_program
+while not end_program:  # syntax 3
     for value in range(6):
         print(set_dice_face(value + 1))
 
@@ -55,9 +56,10 @@ while not end_program
             again = input("\nDo you want to roll again?\n"
                           "Type 'Y' for yes and 'N' for no.\n"
                           ">> ").lower()
-            if again == 'n':
+            # logic 4
+            if again == 'y':
                 print(get_result())
-            elif again == 'y':
+            elif again == 'n':
                 end_roll = True
 
         new_dice = input("\nDo you want to make a new dice?\n"
@@ -65,13 +67,13 @@ while not end_program
                          ">> ").lower()
 
         # To either end or repeat the program
-        if new_dice = 'y':
+        if new_dice == 'y':  # syntax 5
             system('cls')
             print("\nYou already know the rules.\n")
         else:
             end_program = True
 
     else:
-    end_program = True
+        end_program = True  # syntax 6
 
 print("\nSee you next time.")
