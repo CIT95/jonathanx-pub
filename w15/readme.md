@@ -21,11 +21,12 @@ methods
 attributes
 - menuItems = []
 -- list of MenuOption objects
+- current_dice
+-- the currently selected dice
 
 methods
 - refresh()
 -- clears current display and displays the Menu
-
 
 ### Funky Dice Class
 attributes
@@ -37,7 +38,6 @@ attributes
 -- (int) the number of sides the dice will have
 - name
 -- the name of the dice object
-
 
 methods
 - set_number_of_sides()
